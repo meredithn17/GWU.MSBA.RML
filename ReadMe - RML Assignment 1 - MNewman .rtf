@@ -1,0 +1,61 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 HelveticaNeue-Bold;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red24\green24\blue24;\red255\green255\blue255;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c12157\c12157\c12157;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+}
+\margl1440\margr1440\vieww17500\viewh17460\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 Responsible Machine Learning\
+Assignment 1\
+Meredith Newman\
+\
+The purpose of this project is to evaluate the usefulness of the \cf2 \cb3 \expnd0\expndtw0\kerning0
+calculations performed for ProPublica's analysis of the COMPAS Recidivism Risk Scores.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf0 \cb1 \kerning1\expnd0\expndtw0 \ul \ulc0 The purpose of the analysis:\
+
+\f0\b0 \ulnone This project analyzes the COMPAS risk assessment algorithm, especially for biases based on race, age, or gender, and how accurately it predicts an individual\'92s likelihood of recidivism.\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4  We examine how different demographic groups are scored and how those scores relate to actual recidivism outcomes. We also evaluate the algorithm\'92s predictive accuracy through statistical modeling, survival analysis, and comparisons of false positive and false negative rates.
+\f1\b \kerning1\expnd0\expndtw0 \ul \outl0\strokewidth0 \
+
+\f0\b0 \ulnone \
+
+\f1\b \ul The Python libraries used: 
+\f0\b0 \ulnone \
+For data cleaning and manipulation, pandas, numpy, date time, and warnings were used. \
+\pard\pardeftab720\partightenfactor0
+\cf0 For visualizations, maptlotlib and seaborn were used. \
+For statistical modeling, statsmodels was used. \
+For survival analysis, lifelines, including CoxPHFitter and KaplanMeierFitter were used.\
+For numerical operations, math and numpy were used. 
+\f2\fs24 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+
+\f1\b \ul Instructions for reproducing the results:
+\f0\b0 \ulnone \
+1. Install and import required libraries\
+2. Load in the COMPAS data\
+3. Filter the data in accordance with ProPublica standards\
+4. Create the factor variables and convert numerical and date/time variables\
+5. Run logistic regression to test for bias\
+6. Compute likelihood multipliers\
+7. Plot racial disparities in decile scores\
+8. \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Run Cox Proportional Hazards models\
+9. Plot Kaplan\'96Meier Survival curves\
+10. Build confusion matrices (truth tables)\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+\
+
+\f1\b \ul AI Use Dislosure
+\f0\b0 \ulnone \
+Google Gemini was used in Colab to troubleshoot transforming the code from R to Python as needed. All statistical analysis and explanation was written by me. }

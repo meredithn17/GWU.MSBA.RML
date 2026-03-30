@@ -1,0 +1,50 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww19460\viewh17560\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs27 \cf0 Responsible Machine Learning\
+Assignment 2\
+Meredith Newman\
+\
+The purpose of this project is to evaluate the COMPAS Replacement Model for transparency and explainability.
+\f1\b \ul \
+\
+The purpose of the analysis:\
+
+\f0\b0\fs28 \expnd0\expndtw0\kerning0
+\ulnone \outl0\strokewidth0 \strokec2 This project examines how the COMPAS Replacement Model makes risk score predictions, and whether those predictions behave consistently and fairly across individuals and demographic groups. The analysis identified which factors most strongly influence the model\'92s risk predictions to compare global patterns with SHAP and individual\uc0\u8209 level explanations with LIME. The analysis also generated counterfactuals with DiCE to understand what minimal changes would alter a prediction. I evaluated whether the model behaves differently across racial groups to assess whether the model is stable, interpretable, and aligned with responsible governance expectations. These steps helped identify the strengths and limitations of the model, and highlight areas where additional monitoring or safeguards may be needed.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs27 \cf0 \kerning1\expnd0\expndtw0 \ul \ulc0 \outl0\strokewidth0 The Python libraries used:
+\f0\b0 \ulnone \
+For data cleaning and manipulation, pandas and numpy were used.\
+For modeling and machine learning, 
+\fs28 \expnd0\expndtw0\kerning0
+scikit\uc0\u8209 learn
+\fs27 \kerning1\expnd0\expndtw0  was used.\
+For explainability, shap, lime, and dice-ml were used.\
+For visualizations, matplotlib and seaborn were used.
+\fs28 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+
+\f1\b \ul Instructions for reproducing the results:\
+
+\f0\b0 \ulnone 1. I\outl0\strokewidth0 nstall and import required libraries\
+2. \outl0\strokewidth0 \strokec2 Load and preprocess the COMPAS dataset\outl0\strokewidth0 \
+3. Train the COMPAS Replacement Model on the processed data\
+4. SHAP: beeswarm and waterfall plots\
+5. LIME using same individuals\
+6. DICE to generate counterfactuals\
+\
+
+\f1\b \ul AI Use Disclosure\
+
+\f0\b0 \ulnone Google Gemini was used in Colab to troubleshoot code. Microsoft Colab was used for some initial memo ideas, but only in bullet-point form, and updated this ReadMe from the first assignment.}

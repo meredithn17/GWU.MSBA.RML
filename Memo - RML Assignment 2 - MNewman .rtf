@@ -1,0 +1,48 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 Helvetica-Oblique;
+\f3\fswiss\fcharset0 Helvetica-BoldOblique;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww32880\viewh15340\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 MEMO: Court Auditor\
+RE: COMPAS Replacement Model\
+\
+To Whom it May Concern,\
+\
+This memo serves to outline the behavior of the COMPAS Replacement Model, limitations of the methods, and recommended further monitoring.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b \cf0 1. \ul Behavior of the Model
+\f0\b0 \ulnone \
+The model relies heavily on an individual\'92s prior criminal history. However, some other factors outside the individual\'92s control have significant influence: younger defendants are consistently scored higher, and race has a measurable influence. 
+\f2\i \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 SHapley Additive exPlanations 
+\f0\i0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 (SHAP) indicate repeatable and reliable patterns across similar individuals. 
+\f2\i \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Local Interpretable Model\uc0\u8209 agnostic Explanations
+\f0\i0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0  (LIME) indicate that some factors are case-specific and differ from person to person. Some of the predictions of the model are sensitive to small changes in the inputs, and the behavior of the model is very different among different demographic subgroups. Because of this, two individuals whose factors are nearly identical can have very different predicted scores. \
+\
+
+\f1\b 2. \ul Limitations of the Methods
+\f0\b0 \ulnone \
+Both SHAP and LIME methods rely heavily on how the data is preprocessed and encoded. SHAP assumes the model behaves similarly in similar cases; LIME may provide different output each time due to local sampling. \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Both methods may miss some of the complex interactions the model has learned.\kerning1\expnd0\expndtw0 \outl0\strokewidth0  
+\f2\i \expnd0\expndtw0\kerning0
+Diverse Counterfactual Explanations
+\f3\b  
+\f0\i0\b0 (DiCE) can provide recommendations for an individual to obtain a different predicted score, but cannot determine whether those recommended changes are ethically or legally justified. These methods reveal how the model behaves, not whether it should be allowed to behave in that manner.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b \cf0 3. \ul Recommended Further Monitoring
+\f0\b0 \ulnone \
+Regular, comprehensive audits should be conducted to compare predicted scores across racial and age groups. Especially review the individuals predicted to be in the high-risk category for potential patterns of bias. Monitor for drift in the importance of the features over time, and periodically retrain the model with updated (or more evenly-balanced) data. Also monitor for the instability when SHAP and LIME result in very different explanations. \
+High-impact cases, and borderline cases, should be reviewed by a human before any decisions are finalized or action steps are initiated. To facilitate this, clear documentation of the limitations of the model should be provided to users and decision makers, preferably in non-technical language, with regular opportunities for staff training. \
+Most importantly, establish and publicize how an individual can view and contest or appeal their scores, including reviewing their personal data for accuracy.\
+A committee should be formed and meet frequently to review the fairness, accountability, and policy alignment of the predicted scores, and adjudicate appeals.\
+\
+Thank you for your time and attention.}

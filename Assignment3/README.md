@@ -9,14 +9,18 @@ This project evaluates whether the COMPAS risk‑assessment algorithm produces r
 - Subgroups combining race with gender (sex) were used to analyze disparities among intersectional subgroups.</br>
 
 **The Python libraries used:**</br>
-For data loading, cleaning, and manipulation, pandas and numpy were used. </br> For the bar chart visualization, maptlotlib was used. </br> For statistical modeling, statsmodels snd scipy were used. 
+For data loading, cleaning, and manipulation, pandas and numpy were used. </br> 
+For AID and SMD fairness metrics, solas_ai and IPython.display were used. </br>
+For the bar chart visualization, maptlotlib was used. </br> 
+For statistical modeling, statsmodels snd scipy were used. 
 
 **Instructions for reproducing the results:**</br>
 Install and import required libraries
 Load in the COMPAS data
 Filter the data in accordance with ProPublica standards
 Create the binary high‑risk variable
-Compute adverse impact ratio (AIR) and marginal effects (ME) by race
+Compute adverse impact ratio (AIR), marginal effects (ME), and standardized mean difference (SMD) by race
+Compute adverse impact ratio (AIR), marginal effects (ME), and standardized mean difference (SMD) by gender
 Run the two‑proportion z‑test
 Compute error‑rate disparities
 Generate the grouped bar chart

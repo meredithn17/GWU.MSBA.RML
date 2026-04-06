@@ -15,17 +15,15 @@ For the bar chart visualization, maptlotlib was used. </br>
 For statistical modeling, statsmodels snd scipy were used. 
 
 **Instructions for reproducing the results:**</br>
-Install and import required libraries
-Load in the COMPAS data
-Filter the data in accordance with ProPublica standards
-Create the binary high‑risk variable
-Compute adverse impact ratio (AIR), marginal effects (ME), and standardized mean difference (SMD) by race
-Compute adverse impact ratio (AIR), marginal effects (ME), and standardized mean difference (SMD) by gender
-Run the two‑proportion z‑test
-Compute error‑rate disparities
-Generate the grouped bar chart
-Compute standardized mean differences (SMD)
-Conduct the intersectional subgroup analysis
+Install and import required libraries</br>
+Load in the COMPAS data</br>
+Filter the data in accordance with ProPublica standards</br>
+Create the binary high‑risk variable</br>
+Compute adverse impact ratio (AIR), marginal effects (ME), and standardized mean difference (SMD) by **race**</br>
+Compute adverse impact ratio (AIR), marginal effects (ME), and standardized mean difference (SMD) by **gender**</br>
+Compute error‑rate disparities</br>
+Conduct the intersectional subgroup analysis</br>
+Generate the grouped bar chart</br>
 
 **AI Use Dislosure:**</br>
 Google Gemini was used in Colab to troubleshoot code as needed. All statistical analysis and explanation was written by me. Copilot was used after drafting to double-check my analysis.
